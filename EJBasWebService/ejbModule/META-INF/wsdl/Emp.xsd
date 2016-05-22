@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://manish.hcl.com/engineer/ws/ct"
+	elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://manish.hcl.com/engineer/ws/ct">
+
+	<complexType name="Employee">
+		<sequence>
+			<element name="EmpId" type="string"></element>
+			<element name="EmpFName" type="string"></element>
+			<element name="EmpLName" type="string"></element>
+			<element name="Department" type="string"></element>
+			<element name="Address" type="tns:Address" minOccurs="0" maxOccurs="unbounded"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="Address">
+		<sequence>
+			<element name="doorNo" type="int"></element>
+			<element name="street" type="string"></element>
+			<element name="area" type="string"></element>
+			<element name="state" type="string"></element>
+			<element name="country" type="string"></element>
+		</sequence>
+	</complexType>
+</schema>

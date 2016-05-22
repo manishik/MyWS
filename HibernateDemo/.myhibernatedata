@@ -1,0 +1,21 @@
+#
+#Mon Dec 08 13:45:26 IST 2008
+genBasicCompId=false
+sessionFactoryName=com.genuitec.hibernate.HibernateSessionFactory
+profile=
+daoSFId=
+version=3.1
+jndiPath=
+springDaoFile=
+useJavaTypes=true
+keyGenerator=
+libInstallFolder=lib
+addLibs2Project=false
+genVersionTag=false
+sessionFactoryId=
+basePersistenceClass=
+reSettingsFile=/HibernateDemo/hibernate.reveng.xml
+configFile=/HibernateDemo/src/hibernate.cfg.xml
+createConfigFile=true
+addLibs2Classpath=false
+baseDaoClass=BaseHibernateDAO

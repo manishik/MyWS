@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="ejbModule"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Oracle/Middleware/modules/javax.persistence_1.0.0.0_2-0-0.jar"/>
+	<classpathentry kind="lib" path="C:/Oracle/Middleware/modules/javax.ejb_3.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Oracle/Middleware/modules/javax.xml.rpc_1.1.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

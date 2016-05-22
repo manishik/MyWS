@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:tns="http://hcl.com/Student/ws"
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Student"
+	targetNamespace="http://hcl.com/Student/ws">
+
+	<wsdl:types>
+		<xsd:schema targetNamespace="http://hcl.com/Student/ws"
+			xmlns:Q1="http://hcl.com/Student/ao">
+			<xsd:import schemaLocation="../xsd/Student.xsd"
+				namespace="http://hcl.com/Student/ao">
+			</xsd:import>
+			<xsd:element name="addStudentResponse" type="Q1:Result" />
+			<xsd:element name="addStudent" type="Q1:Student" />
+			<xsd:element name="deleteStudent" type="Q1:Student" />
+			<xsd:element name="deleteStudentResponse" type="Q1:Result" />
+			<xsd:element name="getAllStudents">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="getAllStudents"
+							type="xsd:string">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="getAllStudentsResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="getAllStudentsResponse"
+							type="Q1:Student" minOccurs="0" maxOccurs="unbounded">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="getStudentById">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="getStudentById"
+							type="Q1:StudentId">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="getStudentByIdResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="getStudentByIdResponse"
+							type="Q1:Student">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="addStudentResponse">
+		<wsdl:part element="tns:addStudentResponse"
+			name="addStudentResponse" />
+	</wsdl:message>
+	<wsdl:message name="addStudentRequest">
+		<wsdl:part element="tns:addStudent" name="addStudent" />
+	</wsdl:message>
+	<wsdl:message name="deleteStudentRequest">
+		<wsdl:part name="deleteStudent" element="tns:deleteStudent"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="deleteStudentResponse">
+		<wsdl:part name="deleteStudentResponse"
+			element="tns:deleteStudentResponse">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="getAllStudents">
+		<wsdl:part name="getAllStudents" element="tns:getAllStudents"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="getAllStudentsResponse">
+		<wsdl:part name="getAllStudentsResponse"
+			element="tns:getAllStudentsResponse">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="getStudentById">
+		<wsdl:part name="getStudentById" element="tns:getStudentById"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="getStudentByIdResponse">
+		<wsdl:part name="getStudentByIdResponse"
+			element="tns:getStudentByIdResponse">
+		</wsdl:part>
+	</wsdl:message>
+
+	<wsdl:portType name="Student">
+		<wsdl:operation name="addStudent">
+			<wsdl:input message="tns:addStudentRequest" />
+			<wsdl:output message="tns:addStudentResponse" />
+		</wsdl:operation>
+		<wsdl:operation name="deleteStudent">
+			<wsdl:input message="tns:deleteStudentRequest"></wsdl:input>
+			<wsdl:output message="tns:deleteStudentResponse"></wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="getAllStudents">
+			<wsdl:input message="tns:getAllStudents"></wsdl:input>
+			<wsdl:output message="tns:getAllStudentsResponse"></wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="getStudentById">
+			<wsdl:input message="tns:getStudentById"></wsdl:input>
+			<wsdl:output message="tns:getStudentByIdResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name="StudentSOAP" type="tns:Student">		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />		<wsdl:operation name="addStudent">			<soap:operation
+				soapAction="http://hcl.com/Student/addStudent" />			<wsdl:input>				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+
+		<wsdl:operation name="deleteStudent">
+			<soap:operation
+				soapAction="http://hcl.com/Student/deleteStudent" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+
+		<wsdl:operation name="getAllStudents">
+			<soap:operation
+				soapAction="http://hcl.com/Student/getAllStudents" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+
+		<wsdl:operation name="getStudentById">
+			<soap:operation
+				soapAction="http://hcl.com/Student/getStudentById" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:service name="Student">
+		<wsdl:port binding="tns:StudentSOAP" name="StudentSOAP">
+			<soap:address
+				location="http://localhost:8080/Student/services/stuServ" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:tns="http://manish.hcl.com/engineer/ws"
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Engineer"
+	targetNamespace="http://manish.hcl.com/engineer/ws">
+	<wsdl:types>
+		
+			<xsd:schema targetNamespace="http://manish.hcl.com/engineer/ws"
+				xmlns:Q1="http://manish.hcl.com/engineer/ws/ct">
+
+            <xsd:import schemaLocation="Emp.xsd" namespace="http://manish.hcl.com/engineer/ws/ct"></xsd:import>
+          		
+			<xsd:element name="Add">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="x" type="xsd:int" />
+						<xsd:element name="y" type="xsd:int" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+
+			<xsd:element name="AddResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="sum" type="xsd:int" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+
+			<xsd:element name="Sub">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="x" type="xsd:double"></xsd:element>
+						<xsd:element name="y" type="xsd:double" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+
+			<xsd:element name="SubResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="value" type="xsd:double"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			
+			<xsd:element name="AddEmployee">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="AddEmp" type="Q1:Employee"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			
+			<xsd:element name="AddEmployeeResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="AddEmpResp" type="xsd:boolean">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="AddRequest">
+		<wsdl:part element="tns:Add" name="Add" />
+	</wsdl:message>
+	<wsdl:message name="AddResponse">
+		<wsdl:part element="tns:AddResponse" name="AddResponse" />
+	</wsdl:message>
+	<wsdl:message name="SubRequest">
+		<wsdl:part name="Sub" element="tns:Sub"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="SubResponse">
+		<wsdl:part name="SubResponse" element="tns:SubResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="AddEmployeeRequest">
+		<wsdl:part name="AddEmployee" element="tns:AddEmployee"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="AddEmployeeResponse">
+		<wsdl:part name="AddEmployeeResponse"
+			element="tns:AddEmployeeResponse">
+		</wsdl:part>
+	</wsdl:message>
+	
+	<wsdl:portType name="Engineer">
+		<wsdl:operation name="Add">
+			<wsdl:input message="tns:AddRequest" />
+			<wsdl:output message="tns:AddResponse" />
+		</wsdl:operation>
+		<wsdl:operation name="Sub">
+			<wsdl:input message="tns:SubRequest"></wsdl:input>
+			<wsdl:output message="tns:SubResponse"></wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="AddEmployee">
+			<wsdl:input message="tns:AddEmployeeRequest"></wsdl:input>
+			<wsdl:output message="tns:AddEmployeeResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name="EngineerSOAP" type="tns:Engineer">
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		
+		<wsdl:operation name="Add">
+			<soap:operation soapAction="http://manish.hcl.com/engineer/ws/Add" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		
+		<wsdl:operation name="Sub">
+			<soap:operation soapAction="http://manish.hcl.com/engineer/ws/Sub" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		
+		<wsdl:operation name="AddEmployee">
+			<soap:operation
+				soapAction="http://manish.hcl.com/engineer/ws/AddEmployee" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:service name="Engineer">
+		<wsdl:port name="CalculatorBeanPort" binding="tns:EngineerSOAP">
+			<soap:address location="http://localhost:8080/EJBasWebService/CalBean" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,29 @@
+create table CI_ETL_TL_OBJ
+(
+CI_ETL_TL_ID number(20),
+CI_ETL_OBJ_ID number(20) primary key,
+CI_ETL_OBJ_NM varchar2(100),
+CI_ETL_OBJ_TYP_ID varchar2(100),
+CI_ETL_OBJ_PRNT_CLF varchar2(100),
+CI_DESC varchar2(100),
+CI_ETL_OBJ_RLS_DT date,
+CI_EFF varchar(1),
+CI_RMKS varchar2(150)
+);
+
+desc CI_ETL_TL_OBJ;
+
+select * from CI_ETL_TL_OBJ;
+
+drop table CI_ETL_TL_OBJ;
+
+commit;
+
+CREATE SEQUENCE CI_ETL_TL_OBJ_ID_SEQ
+MINVALUE 1
+MAXVALUE 999999999999999999999999999
+INCREMENT BY 1
+START WITH 261
+CACHE 20
+NOORDER
+NOCYCLE;

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path=""/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Professional Life/JarFiles/Hibernate Jars/antlr-2.7.5H3.jar"/>
+	<classpathentry kind="lib" path="C:/Professional Life/JarFiles/Hibernate Jars/asm.jar"/>
+	<classpathentry kind="lib" path="C:/Professional Life/JarFiles/Hibernate Jars/asm-attrs.jar"/>
+	<classpathentry kind="lib" path="C:/Professional Life/JarFiles/Hibernate Jars/cglib-2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Professional Life/JarFiles/Hibernate Jars/commons-collections-2.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Professional Life/JarFiles/Hibernate Jars/commons-logging.jar"/>
+	<classpathentry kind="lib" path="C:/Professional Life/JarFiles/Hibernate Jars/dom4j-1.6.jar"/>
+	<classpathentry kind="lib" path="C:/Professional Life/JarFiles/Hibernate Jars/hibernate3.jar"/>
+	<classpathentry kind="lib" path="C:/Professional Life/JarFiles/Hibernate Jars/jta.jar"/>
+	<classpathentry kind="lib" path="C:/Professional Life/JarFiles/Hibernate Jars/log4j-1.2.14.jar"/>
+	<classpathentry kind="lib" path="C:/Professional Life/JarFiles/Hibernate Jars/Other Dependent Jars/ehcache-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Professional Life/JarFiles/Hibernate Jars/Other Dependent Jars/hibernate-annotations.jar"/>
+	<classpathentry kind="lib" path="C:/Professional Life/JarFiles/Hibernate Jars/Other Dependent Jars/hsqldb.jar"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

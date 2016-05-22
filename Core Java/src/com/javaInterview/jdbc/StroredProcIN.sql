@@ -1,0 +1,14 @@
+CREATE OR REPLACE PROCEDURE insertDBUSER(
+	   p_userid IN DBUSER.USER_ID%TYPE,
+	   p_username IN DBUSER.USERNAME%TYPE,
+	   p_createdby IN DBUSER.CREATED_BY%TYPE,
+	   p_date IN DBUSER.CREATED_DATE%TYPE)
+IS
+BEGIN
+
+  INSERT INTO DBUSER ("USER_ID", "USERNAME", "CREATED_BY", "CREATED_DATE") 
+  VALUES (p_userid, p_username,p_createdby, p_date);
+
+  COMMIT;
+
+END;

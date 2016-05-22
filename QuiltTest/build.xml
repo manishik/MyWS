@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="QuiltProject" default="packageJar" basedir=".">
+
+	<property name="project.name" value="QuiltTest" />
+	<property name="src" value="${basedir}/src" />
+	<property name="lib" value="${basedir}/lib" />
+	<property name="distribution" value="dist" />
+	<property name="quilt.dir" value="quilt-results" />
+	
+	<path id="quilt.classes.dir">
+		<fileset dir="${lib}">
+			<include name="quilt-0.6-a-1.jar" />
+		</fileset>
+	</path>
+	
+	<path id="junit.path">
+		<fileset dir="${lib}">
+			<include name="junit.jar" />
+		</fileset>
+	</path>
+
+	<target name="packageJar" depends="clean,prepare">
+		<antcall target="compile" />
+		<jar jarfile="${distribution}/${project.name}.jar">
+			<fileset dir="${basedir}/bin">
+				<include name="**/*.*" />
+			</fileset>
+		</jar>
+		<antcall target="test"/>
+	</target>
+
+	<target name="compile">
+		<javac srcdir="src" destdir="${basedir}/bin">
+			<classpath refid="junit.path"></classpath>
+		</javac>
+	</target>
+
+	<target name="clean">
+		<delete dir="${distribution}" />
+	</target>
+
+	<target name="prepare">
+		<mkdir dir="${distribution}" />
+		<mkdir dir="${basedir}/bin" />
+	</target>
+	
+	<target name="test" depends="quiltReport" description="Runs unit tests and creates a report" />
+
+	<target name="quiltReport" description="Create a report for coverage of junit tests">
+		<echo message="Quilt..." />
+		<taskdef name="quilt" classname="org.quilt.frontend.ant.QuiltTask">
+			<classpath refid="quilt.classes.dir" />
+		</taskdef>
+
+		<delete dir="${quilt.dir}" />
+		<mkdir dir="${quilt.dir}" />
+
+		<quilt checkCoverage="true" printsummary="on" haltonerror="true" showoutput="true">
+		
+			<formatter type="plain" />
+			<batchtest todir="${quilt.dir}">
+				<fileset dir="${src}">
+					<include name="**/Test*.java" />
+				</fileset>
+			</batchtest>
+			
+		</quilt>
+	</target>
+</project>
+

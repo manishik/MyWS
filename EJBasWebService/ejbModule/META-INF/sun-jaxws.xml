@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<endpoints xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime"
+	version="2.0">
+
+	<endpoint name="Engineer"
+		interface="com.hcl.manish.interfaces.remote.Calculator"
+		implementation="com.hcl.manish.engineer.ws.CalculatorBean"
+		wsdl="Engineer.wsdl"
+		service="{http://manish.hcl.com/engineer/ws}Engineer"
+		port="{http://manish.hcl.com/engineer/ws}CalculatorBeanPort"
+		url-pattern="/services/*" />
+
+</endpoints>

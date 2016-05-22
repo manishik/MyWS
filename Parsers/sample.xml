@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!-- file: sample.xml -->
+
+<!--
+	XML files are used to store data as a tree of elements.
+	Each XML-document can have only single root element.
+	It wraps all the data.
+-->
+
+<purchase-order>
+
+	<date>2005-10-31</date>
+	<number>12345</number>
+
+	<purchased-by>
+		<name>My name</name>
+		<address>My address</address>
+	</purchased-by>
+
+	<order-items>
+
+		<item>
+			<code>687</code>
+			<type>CD</type>
+			<label>Some music</label>
+		</item>
+
+		<item>
+			<code>129851</code>
+			<type>DVD</type>
+			<label>Some video</label>
+		</item>
+
+	</order-items>
+
+</purchase-order>

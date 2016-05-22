@@ -1,0 +1,11 @@
+Mapping of persistance.xml file with session beans.
+
+For JBoss,
+Put the -ds file (database config file) in the server\default\deploy folder.
+the Jndi name should be the same as the datasource name in the persistance.xml file. 
+
+Deploy the ear file in the application server and start the server.
+Check logs of AS for any problems in deployment of the beans. 
+
+
+In this example : oracledb-ds.xml file in jboss deploy folder

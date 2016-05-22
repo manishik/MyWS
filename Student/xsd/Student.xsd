@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://hcl.com/Student/ao"
+	xmlns="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://hcl.com/Student/ao">
+
+	<complexType name="Student">
+		<sequence>
+			<element name="stuId" type="int"></element>
+			<element name="stuName" type="string"></element>
+			<element name="stuClass" type="string"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="Result">
+		<sequence>
+			<element name="result" type="boolean"></element>
+			<element name="msg" type="string"></element>
+		</sequence>
+	</complexType>
+
+	<simpleType name="StudentId">
+		<restriction base="string"></restriction>
+	</simpleType>
+</schema>

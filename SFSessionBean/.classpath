@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="ejbModule"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/SFMDSessionBean"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Professional Life/JarFiles/javaee.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
