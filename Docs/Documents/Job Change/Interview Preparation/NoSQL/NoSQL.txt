@@ -1,0 +1,25 @@
+The Benefits of NoSQL
+and their data model addresses several issues that the relational model is not designed to address
+
+Large volumes of rapidly changing structured, semi-structured, and unstructured data
+Agile sprints, quick schema iteration, and frequent code pushes
+Object-oriented programming that is easy to use and flexible
+Geographically distributed scale-out architecture instead of expensive, monolithic architecture
+
+NoSQL databases are built to allow the insertion of data without a predefined schema.	
+
+MongoDB
+No Joins and No transaction support
+
+MongoDB does not support multi-document transactions. However, MongoDB does provide atomic operations on a single document.
+
+No Schema (No predefined schemas) - schemaless dbs
+more scalable
+Faster than RDBMS (superior performance)
+JSON objects
+
+
+
+BSON - Binary JSON
+BSON documents (objects) consist of an ordered list of elements. 
+BSON types are nominally a superset of JSON types (JSON does not have a date or a byte array type) 

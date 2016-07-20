@@ -1,0 +1,5 @@
+fibonacci (both iterative and recursion)
+factorial
+reverse
+palindrome 
+anagram

@@ -1,0 +1,47 @@
+designer - Working on Documents
+developers
+
+Create things
+save things
+edit things
+save the thing again.
+
+when, why, what the contents were
+
+
+full fleged version control system - GIT
+
+Version Control ??
+History tracking 
+Collaboration 
+Collaboration History Tracking 
+
+revision history 
+
+unifying of actions - merge 
+Bring the changes together 
+
+
+GIT 
+fast and modern
+impl of version control 
+provides history of content changes 
+Facilatating collabrative changes to files 
+easy to use
+
+
+What is GIT?
+
+locally enabled - Distributed 
+doesn't require servers
+
+$ git init myproj
+$ cd myproj
+$ git add .
+$ git commit 
+
+team centric
+
+overlaping of time and 
+
+Have a single server that contains all the versioned files, and a number of clients that check out files from that central place

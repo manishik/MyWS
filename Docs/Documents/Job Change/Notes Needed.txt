@@ -1,0 +1,36 @@
+Notes on 
+
+Web Service - REST
+Building a RESTful Web Service
+
+Exception Handling in Spring MVC
+
+Difference between EJB and Spring and which one would you choose and why?
+
+FROM RESUME
+Wrote java code for consuming RESTful Web Service and passing it to service layer.
+Created couple of a RESTful web service from scratch using EJB stateless session beans
+
+Ajax
+JQuery
+HTML5
+CSS3
+JSP Tag Libraries 
+
+Spring - IoC, MVC, AOP, Security
+Accessing Data with MongoDB
+
+Hibernate
+
+Threads in Java
+
+NoSQL - MongoDB
+
+Jenkins
+
+AngularJS
+
+
+Google search
+consume rest web service using spring
+restful web services interview questions

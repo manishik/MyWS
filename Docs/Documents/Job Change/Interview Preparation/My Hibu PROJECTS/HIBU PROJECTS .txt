@@ -1,0 +1,25 @@
+Hibu
+
+1. PV Dashboard - Spring MVC Flow
+A sales tool used by sales team of Hibu to show the customers about their add performance (Performance data), helps Sales to change customer perceptions about Yell, Includes Market Opportunity (Prospect) statistics for both customers and prospects
+
+Programmed for web service (WSDL 1.1) [DAO] & service layer - DONE 
+Wrote java code for consuming RESTful Web Service and passing it to service layer. 
+
+
+2. Business Finder - Spring MVC FLOW
+Allow sales teams to lookup/search potential new clients either by Business Name, Telephone Number or Postcode
+
+Implemented Spring MongoDB for hibu's customers addition & searching - DAO layer - Done
+
+
+Other Projects
+
+CyberSource Payment Gateway: An interface for SAP CRM and CyberSource for payment process
+
+eContracting & SSO: For confirming the order and for new registration. 
+
+SME Engagement: Telesales team capture info about customer and explains/recommends about different products
+
+SMS Portal
+Sales Enablement 

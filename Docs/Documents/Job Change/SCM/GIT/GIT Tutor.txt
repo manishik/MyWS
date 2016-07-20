@@ -1,0 +1,6 @@
+GIT tutors
+
+http://excess.org/article/2008/07/ogre-git-tutorial/
+
+http://nathanj.github.com/gitguide/tour.html
+

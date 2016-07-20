@@ -1,0 +1,27 @@
+F2F - 16th May 2016
+
+Advantages of using the latest jboss wildfly
+
+how is ajax call asynchronous 
+Javascript 
+
+how would you handle outofmemory exception 
+
+why do you need both rest and soap in a project
+
+taglibs in jsp
+
+Have you written complex queries? 
+
+what design patterns have you used?
+
+Where and why do we use singleton dp?
+what is session facade design pattern? 
+
+why do you need JPA
+
+difference between ANT and maven?
+
+difference between GIT and SVN?
+
+Why did you go with mongoDB? 

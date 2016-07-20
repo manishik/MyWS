@@ -1,0 +1,11 @@
+JPA (Java Persistence API) is a specification of how the object relational mapping should be done. 
+Java is an object oriented programming language. 
+Data from java objects need to be stored in relational (sql based) tables. 
+JPA defines the specification (interface) of how the mapping should be done. 
+JPA is just a specification with no implementation. 
+
+Hibernate is an implementation of the JPA specification.
+All annotations specified by JPA are implemented by Hibernate.
+
+The main benefit of using JPA is that at a later point in time, you can easily switch to another implementation of JPA (different from Hibernate). 
+If I directly use Hibernate annotations, I'm locked in to Hibernate. I cannot easily switch to another ORM framework.

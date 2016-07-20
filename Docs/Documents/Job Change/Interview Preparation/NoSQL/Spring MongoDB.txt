@@ -1,0 +1,7 @@
+Spring Mongo Flow
+
+SpringFramework Mongodb Core - MongoTemplate
+
+spring beans config files
+
+mongodb factory - host-ip - port-27017 and dbname=businessF

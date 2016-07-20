@@ -1,0 +1,5 @@
+
+
+What is Fail safe and fail fast in Java?
+Unions in SQL
+Some basic Unix command. 

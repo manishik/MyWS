@@ -1,0 +1,7 @@
+2nd May 2016 (phone + Skype)
+
+How do you protect restful services - OAUTH
+
+interceptors in spring for logging 
+
+Connect to different instances of MongoDB

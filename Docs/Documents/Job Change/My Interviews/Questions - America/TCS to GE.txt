@@ -1,0 +1,8 @@
+TCS to GE client - 6th March 2016
+
+Expose a method as a soap based web service
+Expose a method as a restful web service
+How to find out the right jar version from Maven if pom file is screwed up
+Do you know web service security?
+Header on SOAP response
+WADL

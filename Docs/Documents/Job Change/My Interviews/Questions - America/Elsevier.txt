@@ -1,0 +1,15 @@
+Elsevier - 23rd March 2016
+
+Explaing the current Projects - Roles and Responsibilities
+
+What advantages do you see with Agile methodology?
+What are the disadvantages? 
+How much % were you coding, went into meeting and discussions - day to day activities 
+difference between soap and rest
+difference between put and post
+
+When are where have I used restful webservices in my current project
+
+
+Project didn't go well
+Projects which was successfull

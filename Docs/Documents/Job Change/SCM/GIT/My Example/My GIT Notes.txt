@@ -1,0 +1,13 @@
+My GIT Notes
+
+
+Get the changes from one folder to another. 
+1 - fetch from origin
+2 - local merge
+
+
+After making changes to a file in a location, it has to be committed. 
+
+From another location/folder, 
+Add a location in remote by doing remote-add
+Then do a local merge. Resolve merge issues if any. 

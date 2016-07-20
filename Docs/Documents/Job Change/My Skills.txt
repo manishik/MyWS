@@ -1,0 +1,17 @@
+Spring IOC, MVC, Mongo
+
+Web Services - SOAP and Restful
+
+JSP, Ajax & JQuery
+
+Maven
+
+JBoss - Clustering? Load balancing?
+
+MongoDB
+
+EJB
+
+Servlets and JSP
+
+Hibernate and LDAP

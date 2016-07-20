@@ -1,0 +1,21 @@
+Business Finder - Spring MVC FLOW
+bf-servlet.xml
+context:property-placeholder for properties file reading
+context:component-scan base-package
+
+Controller -> Component (interface & impl) -> DAO (interface & impl) -> WSDL Service class
+
+Controller
+Basic validations for requestparams got from UI
+Validation using regular expressions... 
+business name, telephone or address
+
+DAO Layer
+Read the WSDL URL - java net package
+Invoke the service from the different project
+get the binding from the service using JAXWS  - Binding Provider
+Set the inputs and invoke the methods... 
+
+Using cxf codegen plugin - WSDL given [path known] -> goal - wsdl2java 
+
+Persist using spring mongodb in DAO layer

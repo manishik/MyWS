@@ -1,0 +1,14 @@
+GIT - SourceTree
+
+
+Initial pushing of code from my computer to remote repositories (GitHub [public] and BitBucket [private])
+1. Create a git repository in the working folder using source tree
+2. Add a remote repository and commit it pushing it to remote 
+
+
+In SourceTree
+Stage the changed files in File Status - Working Copy
+Commit the files to remote giving commit message
+
+clone the repository to a new folder in windows in sourceTree
+In eclipse, import the existing projects from the cloned folder.  

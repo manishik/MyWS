@@ -1,0 +1,74 @@
+CREATE TABLE Employee
+(
+empID int primary key,
+LastName varchar(255),
+FirstName varchar(255),
+Address varchar(255),
+City varchar(255),
+DeptID int 
+);
+
+CREATE TABLE Department
+(
+DeptID int primary key,
+DeptName varchar(255) 
+);
+
+INSERT INTO Employee(empID, LastName, FirstName, Address, City, DeptID)
+VALUES ('1','Keshav','Manish','RockCove Ter','Ashburn','1');
+
+INSERT INTO Employee(empID, LastName, FirstName, Address, City, DeptID)
+VALUES ('2','Sal','Sandesh','Indiranagar','BLR','2');
+
+INSERT INTO Employee(empID, LastName, FirstName, Address, City, DeptID)
+VALUES ('3','Raj','Ritu','Noida','Delhi','1');
+
+INSERT INTO Employee(empID, LastName, FirstName, Address, City, DeptID)
+VALUES ('4','David','Jashua','Ter','Den','9');
+
+INSERT INTO Employee(empID, LastName, FirstName, Address, City, DeptID)
+VALUES ('5','Sri','Shreyas','Somewhere in Boston','Boston','9');
+
+Delete from EMPLOYEE where empID = '2';
+
+INSERT INTO Department(DeptID, DeptName)
+VALUES ('1','Software');
+
+INSERT INTO Department(DeptID, DeptName)
+VALUES ('2','Operations');
+
+INSERT INTO Department(DeptID, DeptName)
+VALUES ('3','HR');
+
+INSERT INTO Department(DeptID, DeptName)
+VALUES ('4','Finance');
+
+INSERT INTO Department(DeptID, DeptName)
+VALUES ('5','Security');
+
+INSERT INTO Department(DeptID, DeptName)
+VALUES ('9','Info Security');
+
+select * from employee;
+select * from DEPARTMENT;
+
+select empID, Firstname from EMPLOYEE e, DEPARTMENT d
+where e.DEPTID = d.DEPTID;
+
+SELECT EMPLOYEE.FirstName, DEPARTMENT.DeptName
+FROM EMPLOYEE
+LEFT JOIN DEPARTMENT
+ON EMPLOYEE.DeptID=DEPARTMENT.DeptID
+ORDER BY EMPLOYEE.EmpID;
+
+SELECT EMPLOYEE.FirstName, DEPARTMENT.DeptName
+FROM EMPLOYEE
+RIGHT JOIN DEPARTMENT
+ON EMPLOYEE.DeptID=DEPARTMENT.DeptID
+ORDER BY EMPLOYEE.EmpID;
+
+SELECT * 
+FROM EMPLOYEE
+FULL OUTER JOIN DEPARTMENT
+ON EMPLOYEE.DeptID=DEPARTMENT.DeptID
+ORDER BY EMPLOYEE.EmpID;

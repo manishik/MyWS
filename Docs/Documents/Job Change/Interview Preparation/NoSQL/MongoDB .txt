@@ -1,0 +1,37 @@
+A MongoDB database stores its data in collections. 
+A collection holds one or more BSON documents. 
+Documents are analogous to records or rows in a relational database table. 
+Each document has one or more fields; fields are similar to the columns in a relational database table.
+
+
+MongoDB SetUp
+After msi file setup
+
+Start Mongo Server - Mongod
+Go to the command - mongo
+
+Shell Commands - mongo shell
+
+show dbs - lists out all database names
+use test (use the test database)
+show Collections
+db.Employee.find();
+db.Employee.find().pretty();
+
+createCollection
+
+getCollection
+collectionExists
+dropCollection
+
+find() - db.Employee.find({lastName: "David"})
+findbyId()
+findAndModify
+findAndRemove
+
+Query and Criteria 
+
+insert inside an collection
+insert
+
+update - save
