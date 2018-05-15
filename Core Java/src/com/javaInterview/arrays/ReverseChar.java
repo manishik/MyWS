@@ -4,11 +4,13 @@ public class ReverseChar {
 
 	public static void main(String[] args) {
 
-		String str = "MyString has spaces and 123 numbers";
-		System.out.println("String = " + str);
-		char charArray[] = new char[str.length()];
-		for (int i = 0; i < str.length(); i++) {
-			charArray[i] = str.charAt(i);
+		String strToReverse = "MyString has spaces and 123 numbers";
+		System.out.println("String to Reverse = " + strToReverse);
+		char charArray[] = new char[strToReverse.length()];
+		
+		//Convert String to Char Array
+		for (int i = 0; i < strToReverse.length(); i++) {
+			charArray[i] = strToReverse.charAt(i);
 		}
 
 		char[] revArray = new char[charArray.length];
