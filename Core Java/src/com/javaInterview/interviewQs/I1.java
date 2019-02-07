@@ -21,7 +21,7 @@ public class I1 {
 		System.out.println("length = " + string.length());
 		for (int i = 0; i < string.length(); i++) {
 			char c = string.charAt(i);
-			if (c == '0') {
+			if (c == '0') { 
 				oneCounter++;
 			}
 		}
