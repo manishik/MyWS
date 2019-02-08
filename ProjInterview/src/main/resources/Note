@@ -1,0 +1,9 @@
+Post Request on PostMan
+
+Valid
+http://localhost:8080/validate/creditCard/0123456789012345
+
+
+Invalid
+http://localhost:8080/validate/creditCard/01234567890123456
+http://localhost:8080/validate/creditCard/01234567890123M

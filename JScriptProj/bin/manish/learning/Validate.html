@@ -1,0 +1,41 @@
+<html>
+
+<head>
+<script type='text/javascript'>
+	function displayInputOpts(manish)
+	{
+		alert(manish["currency"].value);
+		alert(manish["age"].value);
+		if(manish["currency"].value == null || manish["currency"].value==""){
+			alert("Currency Value is null");
+		}
+		
+		top.newWin = window.open('width=350, height=280, left=470, top=300, titlebar=yes, resizable=yes');
+        top.newWin.focus();
+		
+	}
+</script>
+</head>
+
+<body>
+
+<form onSubmit="displayInputOpts(this)" >
+<table border="0" cellspacing="0" cellpadding="2" width="100%" class="normal2">
+	<tr>
+    	<td><B>Currency :</B></td>
+    	<!-- td><scrittura:edit name="currency" excludes="dummyCurrency"/></td -->
+		<td>
+    		<input type='text' name='currency'/>
+    	</td>
+    	<td><B>Age :</B></td>
+    	<td>
+    		<input type='text' name='age' size='20'/>
+    	</td>
+    	<td><input type="Submit"  value="Submit"/> </td>  
+	</tr>
+</table>
+</form>
+
+</body>
+
+</html> 
