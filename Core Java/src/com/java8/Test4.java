@@ -10,18 +10,17 @@ public class Test4 {
 	public static void main(String args[]) {
 
 		// create a list of strings
-		List<String> names = Arrays.asList("Geek", "GeeksQuiz", "g1", "QA", "Geek2");
+		List<String> listOfString = Arrays.asList("Keshav", "Geek", "GEico", "g1", "GeeksQuiz", "QA", "Manish");
 
 		// declare the predicate type as string and use
 		// lambda expression to create object
-		Predicate<String> p = (s) -> s.startsWith("G");
+		Predicate<String> predicate = (string) -> string.startsWith("Ge");
 
 		// Iterate through the list
-		for (String st : names) {
+		for (String string : listOfString) {
 			// call the test method
-			if (p.test(st))
-				System.out.println(st);
+			if (predicate.test(string))
+				System.out.println(string);
 		}
 	}
-
 }
