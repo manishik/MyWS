@@ -7,7 +7,8 @@ class TestImmutabilty {
 		ImmutableClass im = ImmutableClass.createNewInstance(100, "test", new Date());
 		System.out.println(im);
 		tryModification(im.getImmutableField1(), im.getImmutableField2(), im.getMutableField());
-		System.out.println(im);
+		ImmutableClass im1 = ImmutableClass.createNewInstance(55, "Some", new Date());
+		System.out.println(im1);
 	}
 
 	private static void tryModification(Integer immutableField1, String immutableField2, Date mutableField) {

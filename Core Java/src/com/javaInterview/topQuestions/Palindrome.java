@@ -5,7 +5,7 @@ public class Palindrome {
 	public static void main(String[] args) {
 		int array[] = new int[] { 1, 2, 3, 2, 1 };
 		String[] strArray = new String[] { "Manish", "Indudhar", "Keshav", "Indudhar", "Manish" };
-		char charArray[] = new char[] { 'b', 'a', 'z', 'a', 'b', 'f' };
+		char charArray[] = new char[] { 'b', 'a', 'z', 'a', 'b' };
 		if (palindrome(charArray)) {
 			System.out.println("Palindrome");
 		} else {

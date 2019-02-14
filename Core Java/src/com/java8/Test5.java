@@ -16,16 +16,18 @@ public class Test5 {
 
 		System.out.println("New Number List = " + newNumberList.stream().sorted().collect(Collectors.toList()));*/
 		
-		List<Integer> numList = new ArrayList<Integer>();
-		numList.add(5);numList.add(1);numList.add(1);numList.add(7);numList.add(15);numList.add(15);numList.add(55);
-		numList.add(33);numList.add(23);numList.add(23);numList.add(59);numList.add(555);
+		List<Integer> listOfInts = new ArrayList<Integer>();
+		listOfInts.add(5);listOfInts.add(1);listOfInts.add(1);listOfInts.add(7);listOfInts.add(15);listOfInts.add(15);listOfInts.add(55);
+		listOfInts.add(33);listOfInts.add(23);listOfInts.add(23);listOfInts.add(59);listOfInts.add(555);
 		
-		System.out.println("Number List = " + numList);
+		System.out.println("Number List = " + listOfInts);
 
-		System.out.println("New Number List = " + numList.stream().distinct().sorted().collect(Collectors.toList()));
+		System.out.println("New Number List = " + listOfInts.stream().distinct().sorted().collect(Collectors.toList()));
 		
-		numList.stream().forEach(i -> System.out.println(i));
+		//iterating using streams
+		listOfInts.stream().forEach(i -> System.out.println(i));
 		System.out.println("-----------");
-		numList.forEach(j -> System.out.println(j));
+		//normal iteration using forEach()
+		listOfInts.forEach(j -> System.out.println(j));
 	}
 }
