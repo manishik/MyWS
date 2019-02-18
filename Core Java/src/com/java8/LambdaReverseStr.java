@@ -1,6 +1,6 @@
 package com.java8;
 
-public class Lambda1 {
+public class LambdaReverseStr {
 	public static void main(String[] args) {
 		// Block lambda to reverse string
 		MyString reverseStr = (str) -> {
@@ -13,7 +13,7 @@ public class Lambda1 {
 		};
 		
 		// Output: omeD adbmaL
-		System.out.println(reverseStr.myStringFunction("Lambda Demo")); 
+		System.out.println(reverseStr.myStringFunction("Lambda Reverse String Demo")); 
 	}
 }
 
