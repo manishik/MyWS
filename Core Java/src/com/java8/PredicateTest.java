@@ -14,12 +14,12 @@ public class PredicateTest {
 
 		// declare the predicate type as string and use
 		// lambda expression to create object
-		Predicate<String> predicate = (string) -> string.startsWith("Ge");
+		Predicate<String> strWhichStartsWithGe = (string) -> string.startsWith("Ge");
 
 		// Iterate through the list
 		for (String string : listOfString) {
 			// call the test method
-			if (predicate.test(string))
+			if (strWhichStartsWithGe.test(string))
 				System.out.println(string);
 		}
 		
@@ -27,7 +27,7 @@ public class PredicateTest {
         Predicate<Integer> lesserthan = i -> (i < 18);  
   
         // Calling Predicate method 
-        System.out.println(lesserthan.test(10));  
+        System.out.println("lesserthan = " + lesserthan.test(10));  
         
         
         
