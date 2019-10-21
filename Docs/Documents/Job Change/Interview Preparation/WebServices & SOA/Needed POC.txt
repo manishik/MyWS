@@ -1,5 +1,0 @@
-Web Service Security POC
-
-SOAP Security
-
-REST Security

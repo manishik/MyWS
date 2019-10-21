@@ -1,6 +1,0 @@
-Migrated test environment to AWS. Deployed the application utilizing almost all of the AWS stack (EC2 & S3)
-Utilizing Amazon Web Services (AWS)
-
-AWS Web Services
-
-Cloud Computing (AWS)

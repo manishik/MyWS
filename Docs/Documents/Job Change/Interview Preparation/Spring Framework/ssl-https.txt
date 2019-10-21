@@ -1,8 +1,0 @@
-To force trafic over ssl/https
-
-set up a of a security certificate on the server - self signed cert for dev
-not for prod
-
-keytool command wth java to generate self signed cetificate
-create a connector - force us to use port 8443 
-enable our force-channel for certain url inside application 

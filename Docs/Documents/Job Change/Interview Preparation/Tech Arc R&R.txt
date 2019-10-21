@@ -1,8 +1,0 @@
-Technical Architect 
-Responsible for forecasting system performance before it is deployed into production.
-Determine how scalable a system is and how thin we can stretch its limits.
-Diagnosing software bottlenecks and finding plausible long term solutions.
-Diagnosing issues in production, finding causes/effects and determining the impact it will have on the system.
-Created scripts that give a detailed analysis of the flow of information between tiers in a complex architecture.
-Diagnosed complicated issue occurring in production and created reports that influenced executive decisions.
-created graphs/charts to illustrate performance problems during testing

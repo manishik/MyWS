@@ -1,2 +1,0 @@
-http://visionsdeveloper.com/blog/page/ejb3-vs-spring-framework.jsp
-

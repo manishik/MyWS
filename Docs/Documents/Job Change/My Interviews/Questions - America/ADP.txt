@@ -1,6 +1,0 @@
-9th May 2016
-
-What's your current role.
-Explain the different type of collections in Java - list, set and map
-Difference between ArrayList and LinkedList, when do you choose what?
-Explain Big O notation 

@@ -1,4 +1,0 @@
-Have you ever merged anyones patches into your repository?
-What are the different ways you've used tags in your development cycle?
-When would you commit your changes to your local repository? When would you push them to origin?
-Have you ever fixed a mistake by rewriting the history of a git repository? Have you ever been stung by it?

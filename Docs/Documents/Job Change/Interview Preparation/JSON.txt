@@ -1,6 +1,0 @@
-JSON has Dictionary and Arrays
-
-Dictionary - {}
-Arrays - []
-
-Dictionary at the top level. 
